@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.google-apps img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.sign-in {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+.google-logo {
+    font-size: 10vw;
+    font-weight: bold;
+    color: #4285F4;
+    letter-spacing: -2px;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    outline: none;
+    padding-left: 40px;
+    padding-right: 80px;
+}
+
+.search-container img {
+    position: absolute;
+    width: 20px;
+    cursor: pointer;
+}
+
+.search-icon {
+    left: 15px;
+}
+
+.voice-search-icon {
+    right: 40px;
+}
+
+.image-search-icon {
+    right: 10px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    background-color: #f8f9fa;
+    border: 1px solid #dfe1e5;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #e8e8e8;
+}
+
+.languages {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.languages a {
+    text-decoration: none;
+    color: #1a73e8;
+    margin: 0 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-left {
+        gap: 10px;
+    }
+    .search-bar {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .buttons {
+        flex-direction: column;
+    }
+    button {
+        width: 100%;
+        max-width: 200px;
+    }
+} 
